@@ -1,13 +1,13 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-const ProtectedRoute = ({children}) => {
-    console.log('protec')
+const ProtectedRoute = ({ children }) => {
+    console.log('protec');
     const router = useRouter();
-    const ISSERVER = typeof window === "undefined";
+    const ISSERVER = typeof window === 'undefined';
     let isToken;
-    if(!ISSERVER) {
-        isToken = localStorage.getItem('token') || "";
+    if (!ISSERVER) {
+        isToken = localStorage.getItem('token') || '';
     }
     // const isToken = localStorage.getItem('token') || "";
     const dashboardRoute = ['/admin', 'service'];
@@ -16,7 +16,7 @@ const ProtectedRoute = ({children}) => {
     // console.log(router)
     // console.log(landingRoute.includes(router.pathname))
 
-    if (dashboardRoute.includes(router.pathname)) router.push('/admin')
+    if (dashboardRoute.includes(router.pathname)) router.push('/admin');
 
     // if (isToken && (dashboardRoute.includes(router.pathname))) {
     //     return (
@@ -50,9 +50,7 @@ const ProtectedRoute = ({children}) => {
     //     );
     // }
 
-    return (
-        <div>{children}</div>
-    );
-}
+    return <div>{children}</div>;
+};
 
 export default ProtectedRoute;

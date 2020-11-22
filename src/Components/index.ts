@@ -1,2 +1,10 @@
 export { default as Dialog } from './Dialog';
 export { default as ProtectedRoute } from './ProtectedRoute';
+export { default as Banner } from './Banner';
+export { default as Contact } from './Contact';
+export { default as TopBar } from './TopBar';
+export { default as Footer } from './Footer';
+export { default as YouShareWeCare } from './YouShareWeCare';
+export { default as Logo } from './Logo';
+export { default as GridItem } from './Grid/GridItem';
+export { default as GridContainer } from './Grid/GridContainer';

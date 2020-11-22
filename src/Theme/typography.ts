@@ -1,36 +1,27 @@
 export default {
-    h1: {
-      fontWeight: 500,
-      fontSize: 35,
-      letterSpacing: '-0.24px'
+    fontSizeText: {
+        type1: '16px',
+        type2: '18px',
+        type3: '20px',
+        type4: '30px',
+        type5: '40px',
+        type6: '48px',
     },
-    h2: {
-      fontWeight: 500,
-      fontSize: 29,
-      letterSpacing: '-0.24px'
+    fontWeight: {
+        type1: '300',
+        type2: 'bold',
+        type3: '900',
+        type4: 'normal',
     },
-    h3: {
-      fontWeight: 500,
-      fontSize: 24,
-      letterSpacing: '-0.06px'
+    lineHeight: {
+        type1: '21px',
+        type2: '24px',
+        type3: '30px',
+        type4: '40px',
+        type5: '54px',
     },
-    h4: {
-      fontWeight: 500,
-      fontSize: 20,
-      letterSpacing: '-0.06px'
+    other: {
+        overflow: 'hidden',
+        textTransform: 'uppercase',
     },
-    h5: {
-      fontWeight: 500,
-      fontSize: 16,
-      letterSpacing: '-0.05px'
-    },
-    h6: {
-      fontWeight: 500,
-      fontSize: 14,
-      letterSpacing: '-0.05px'
-    },
-    overline: {
-      fontWeight: 500
-    }
-  };
-  
+};

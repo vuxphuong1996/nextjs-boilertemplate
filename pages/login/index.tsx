@@ -1,14 +1,12 @@
 import React from 'react';
-import { withTranslation } from "@Configs/i18n";
+import { withTranslation } from '@Configs/i18n';
 
 const Login = ({ t }) => {
-    return (
-        <div>Login</div>
-    )
-}
+    return <div>Login</div>;
+};
 
 Login.getInitialProps = async () => ({
-    namespacesRequired: ["common"],
+    namespacesRequired: ['common'],
 });
 
-export default withTranslation("common")(Login);
+export default withTranslation('common')(Login);

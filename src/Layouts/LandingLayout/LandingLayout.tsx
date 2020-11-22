@@ -1,7 +1,12 @@
+import {TopBar} from '@Components';
+
 const LandingLayout = ({ children }) => {
     return (
-        <div>{children}</div>
-    );
-}
+        <div>
+            <TopBar />
+        {children}  
+    </div>
+    )
+};
 
 export default LandingLayout;

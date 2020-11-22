@@ -1,5 +1,24 @@
 {
-    "presets": ["next/babel"],
+    "env": {
+        "development": {
+          "plugins": [
+            [
+              "styled-components",
+              { "ssr": true, "displayName": true, "preprocess": false }
+            ]
+          ],
+          "presets": ["next/babel"]
+        },
+        "production": {
+          "plugins": [
+            [
+              "styled-components",
+              { "ssr": true, "displayName": true, "preprocess": false }
+            ]
+          ],
+          "presets": ["next/babel"]
+        }
+    },
     "plugins": [
         [
             "module-resolver",
@@ -11,15 +30,17 @@
                     "@Configs": "./src/Configs",
                     "@Style": "./src/Styled",
                     "@Theme": "./src/Theme",
-                    "@Layouts": "./src/Layouts"
+                    "@Layouts": "./src/Layouts",
+                    "@Store": "./src/Store",
+                    "@Reducers": "./src/Reducers",
+                    "@Modals": "./src/Modals"
                 }
             }
         ],
         [
-            "babel-plugin-styled-components",
-            {
-                "ssr": true
-            }
-        ]
+            "styled-components",
+            { "ssr": true, "displayName": true, "preprocess": false }
+          ],
+          ["import", { "libraryName": "antd", "style": "css" }]
     ]
 }

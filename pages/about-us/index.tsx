@@ -1,17 +1,13 @@
 import React from 'react';
-import { i18n, Link, withTranslation } from "@Configs/i18n";
-import styled from "styled-components";
-import { Top, Bottom } from "@Style";
+import { i18n, Link, withTranslation } from '@Configs/i18n';
 import Button from '@material-ui/core/Button';
 
 const AboutUs = ({ t }) => {
-    return (
-        <div>about</div>
-    )
-}
+    return <div>about</div>;
+};
 
 AboutUs.getInitialProps = async () => ({
-    namespacesRequired: ["common"],
+    namespacesRequired: ['common'],
 });
 
-export default withTranslation("common")(AboutUs);
+export default withTranslation('common')(AboutUs);

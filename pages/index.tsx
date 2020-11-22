@@ -1,18 +1,10 @@
-import { i18n, Link, withTranslation } from "@Configs/i18n";
-import styled from "styled-components";
-import { Top, Bottom } from "@Style";
+import { i18n, Link, withTranslation } from '@Configs/i18n';
 import Button from '@material-ui/core/Button';
 
-const Bim = styled.div`
-    color: red;
-`;
 const Homepage = ({ t }) => (
     <>
         <main>
             <div>
-                <Bim>asdasd</Bim>
-                <Top>aszxczxc</Top>
-                <Bottom>2312312</Bottom>
                 <Button variant="contained" color="primary">
                     Primary
                 </Button>
@@ -23,14 +15,14 @@ const Homepage = ({ t }) => (
                     type="button"
                     onClick={() =>
                         i18n.changeLanguage(
-                            i18n.language === "en" ? "vn" : "en"
+                            i18n.language === 'en' ? 'vn' : 'en'
                         )
                     }
                 >
-                    {t("Hello")}
+                    {t('Hello')}
                 </button>
                 <Link href="/second-page">
-                    <button type="button">{t("to-second-page")}</button>
+                    <button type="button">{t('to-second-page')}</button>
                 </Link>
             </div>
         </main>
@@ -38,7 +30,7 @@ const Homepage = ({ t }) => (
 );
 
 Homepage.getInitialProps = async () => ({
-    namespacesRequired: ["common"],
+    namespacesRequired: ['common'],
 });
 
-export default withTranslation("common")(Homepage);
+export default withTranslation('common')(Homepage);
