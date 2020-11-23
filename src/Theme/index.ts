@@ -13,7 +13,7 @@ const theme = createMuiTheme({
         },
     },
     palette,
-    typography
+    typography,
 });
 
 export default theme;

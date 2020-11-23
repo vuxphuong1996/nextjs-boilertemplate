@@ -8,3 +8,4 @@ export { default as YouShareWeCare } from './YouShareWeCare';
 export { default as Logo } from './Logo';
 export { default as GridItem } from './Grid/GridItem';
 export { default as GridContainer } from './Grid/GridContainer';
+export { default as Language } from './Language';

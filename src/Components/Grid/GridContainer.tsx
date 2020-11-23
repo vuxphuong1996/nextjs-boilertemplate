@@ -8,7 +8,7 @@ const useStyles = makeStyles({
         // zIndex: 3,
         margin: '0 -15px !important',
         // width: 'unset',
-    }
+    },
 });
 
 export default function GridContainer(props) {

@@ -14,11 +14,12 @@ export default {
         type4: 'normal',
     },
     lineHeight: {
-        type1: '21px',
-        type2: '24px',
-        type3: '30px',
-        type4: '40px',
-        type5: '54px',
+        type1: '18px',
+        type2: '21px',
+        type3: '24px',
+        type4: '30px',
+        type5: '40px',
+        type6: '54px',
     },
     other: {
         overflow: 'hidden',

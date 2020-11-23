@@ -1,6 +1,5 @@
 import React from 'react';
-import { i18n, Link, withTranslation } from '@Configs/i18n';
-import Button from '@material-ui/core/Button';
+import { withTranslation } from '@Configs/i18n';
 
 const ContactUs = ({ t }) => {
     return <div>Contact</div>;

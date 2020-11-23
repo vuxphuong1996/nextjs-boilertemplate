@@ -1,29 +1,43 @@
 {
     "env": {
         "development": {
-          "plugins": [
-            [
-              "styled-components",
-              { "ssr": true, "displayName": true, "preprocess": false }
+            "plugins": [
+                [
+                    "styled-components",
+                    {
+                        "ssr": true,
+                        "displayName": true,
+                        "preprocess": false
+                    }
+                ]
+            ],
+            "presets": [
+                "next/babel"
             ]
-          ],
-          "presets": ["next/babel"]
         },
         "production": {
-          "plugins": [
-            [
-              "styled-components",
-              { "ssr": true, "displayName": true, "preprocess": false }
+            "plugins": [
+                [
+                    "styled-components",
+                    {
+                        "ssr": true,
+                        "displayName": true,
+                        "preprocess": false
+                    }
+                ]
+            ],
+            "presets": [
+                "next/babel"
             ]
-          ],
-          "presets": ["next/babel"]
         }
     },
     "plugins": [
         [
             "module-resolver",
             {
-                "root": ["./"],
+                "root": [
+                    "./"
+                ],
                 "alias": {
                     "@Actions": "./src/Actions",
                     "@Components": "./src/Components",
@@ -39,8 +53,11 @@
         ],
         [
             "styled-components",
-            { "ssr": true, "displayName": true, "preprocess": false }
-          ],
-          ["import", { "libraryName": "antd", "style": "css" }]
+            {
+                "ssr": true,
+                "displayName": true,
+                "preprocess": false
+            }
+        ]
     ]
 }

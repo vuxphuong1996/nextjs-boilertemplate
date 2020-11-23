@@ -1,12 +1,13 @@
-import {TopBar} from '@Components';
+import React from 'react';
+import { TopBar } from '@Components';
 
 const LandingLayout = ({ children }) => {
     return (
         <div>
             <TopBar />
-        {children}  
-    </div>
-    )
+            {children}
+        </div>
+    );
 };
 
 export default LandingLayout;

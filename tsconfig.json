@@ -24,7 +24,7 @@
             "@Layouts": ["src/Layouts"],
             "@Store": ["src/Store"],
             "@Reducers": ["src/Reducers"],
-            "@Modals": ["src/Modals"]
+            "@Modals": ["src/Modals"],
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "*.svg"],
